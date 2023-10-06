@@ -3,6 +3,19 @@ const hamburgerBtn = document.querySelector(".hamburger-btn");
 const hideMenuBtn = navbarMenu.querySelector(".close-btn");
 const showPopupBtn = document.querySelector(".login-btn");
 
+let prevScrollPos = window.pageYOffset;
+window.onscroll = function () {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.querySelector('.navbar');
+
+    if (prevScrollPos > currentScrollPos) {
+        navbar.style.top = '0';
+    } else {
+        navbar.style.top = '-60px';
+    }
+
+    prevScrollPos = currentScrollPos;
+}
 // Show mobile menu
 hamburgerBtn.addEventListener("click", () => {
     navbarMenu.classList.toggle("show-menu");
@@ -20,6 +33,10 @@ showPopupBtn.addEventListener("click", () => {
 src = "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
 var testimonialsSlider = new Swiper('.testimonials-slider', {
     loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true
+    },
     grabCursor: true,
     spaceBetween: 30,
     pagination: {
@@ -28,7 +45,7 @@ var testimonialsSlider = new Swiper('.testimonials-slider', {
     },
     breakpoints: {
         767: {
-            slidesPerView: 3
+            slidesPerView: 5
         }
     }
 });
@@ -77,21 +94,6 @@ websiteButton.addEventListener("click", function () {
     setActiveButton(websiteButton);
     websiteButton.querySelector("button").style.color = "#0000ff";
 });
-
-// Hide/show the navbar on scroll
-let prevScrollPos = window.pageYOffset;
-window.onscroll = function () {
-    const currentScrollPos = window.pageYOffset;
-    const navbar = document.querySelector('.navbar1');
-
-    if (prevScrollPos > currentScrollPos) {
-        navbar.style.top = '0';
-    } else {
-        navbar.style.top = '-60px';
-    }
-
-    prevScrollPos = currentScrollPos;
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     const mulaiButton = document.getElementById("mulaiButton");
