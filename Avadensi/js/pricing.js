@@ -9,7 +9,7 @@ window.onscroll = function () {
     const navbar = document.querySelector('.navbar');
 
     if (prevScrollPos > currentScrollPos) {
-        navbar.style.top = '0';
+        navbar.style.top = '0px';
     } else {
         navbar.style.top = '-105px';
     }
