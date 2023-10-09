@@ -9,9 +9,9 @@ window.onscroll = function () {
     const navbar = document.querySelector('.navbar');
 
     if (prevScrollPos > currentScrollPos) {
-        navbar.style.top = '0px';
+        navbar.style.top = '0';
     } else {
-        navbar.style.top = '-105px';
+        navbar.style.top = '-110px';
     }
 
     prevScrollPos = currentScrollPos;

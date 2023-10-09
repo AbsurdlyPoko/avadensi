@@ -717,33 +717,27 @@ ul {
     overflow: hidden;
     width: 300px;
     height: 190px;
+    z-index: 10;
 }
 
 .BoulevardBeach {
-    width: 120px;
-    margin-top: 10%;
+    width: 400px;
+    margin-left: -15%;
 }
 
 .keraji {
-    width: 185px;
-    margin-top: 35%;
+    width: 300px;
+    margin-top: 10%;
 }
 
 .kakilima {
-    width: 185px;
-    margin-top: 22%;
+    width: 300px;
+    margin-top: 10%;
 }
 
 .wellco {
-    width: 225px;
+    width: 300px;
     margin-top: 10%;
-    margin-left: 15%;
-}
-
-.lsgcorp {
-    width: 225px;
-    margin-top: 25%;
-    margin-right: 15%;
 }
 
 #main2 {
