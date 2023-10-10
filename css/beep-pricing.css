@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: Bird Of Paradise;
+    src: url();
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url("images/hero-bg.jpg") center/cover no-repeat;
+    font-family: 'inter', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 0px;
+}
+
+/* Nav Bar */
+.navbar {
+    display: flex;
+    transition: top 0.3s;
+    background-color: white;
+    padding: 0px 0;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0% !important; 
+    justify-content: space-between;
+}
+
+.navbar .hamburger-btn {
+    display: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.navbar .logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 30px;
+    padding-top: 5px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar .links a {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.1s ease;
+    font-family: 'Inter',sans-serif;
+}
+
+.navbar .links a:hover {
+    color: #ffffff;
+    background-color: #1652F0;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.navbar .login-btn {
+
+    color: #1652F0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.navbar .login-btn:hover {
+    color: #ffffff;
+    background-color: #1652F0;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.logo-box {
+    width: 100px;
+    /* Lebar kotak logo */
+    height: 100px;
+    /* Tinggi kotak logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* Mengatur sudut kotak */
+}
+
+.logo {
+    max-width: 150%;
+    max-height: 100%;
+}
+
+@media (max-width: 950px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .logo img {
+        display: none;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #fff;
+        transition: 0.2s ease;
+    }
+
+    .navbar .links.show-menu {
+        left: 0;
+    }
+
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .navbar .links a:hover {
+        color: #00BCD4;
+    }
+
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}
+/*main section*/
+
+.container {
+    position: relative;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: 545px;
+    }
+
+    .logo-ontop {
+        width: 175px !important;
+    }
+
+    .header-text h1 {
+        top: 43% !important;
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: 400px;
+    }
+
+    .logo-ontop {
+        width: 150px !important;
+    }
+
+    .header-text h1 {
+        top: 43% !important;
+        font-size: 30px !important;
+    }
+}
+
+.aboveus {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.prititle {
+    font-weight: 700;
+    color: #1652F0;
+}
+
+.contentsup {
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+    list-style: none;
+    justify-content: center;
+}
+
+.contentsup a {
+    color: #000000;
+    font-size: 1.50rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: 0.1s ease;
+}
+
+.aboveus .contentsup a:hover {
+    color: #ffffff;
+    background-color: #1652F0;
+    padding: 15px 15px;
+    border-radius: 5%;
+}
+
+.underus {
+    padding-top: 150px;
+    padding-left: 100px;
+    font-family: 'Inter', sans-serif;
+    width: 550px;
+}
+
+.sosmed {
+    font-weight: 700;
+    color: #1652F0;
+    font-size: 40px;
+}
+
+.descsosmed {
+    font-weight: 400;
+    text-align: justify;
+    font-size: larger;
+    padding-top: 30px;
+}
+
+.imgsosmed {
+    position: absolute;
+    top: 35%;
+    right: 2.5%;
+    max-width: 550px;
+}
+
+.container2 {
+    position: relative;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 750px;
+    background-color: #1652F0;
+}
+
+.benefit{
+    height: 750px;
+}
+
+.beneftitle {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.benefcont {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding-top: 100px;
+    z-index: 5;
+    position: relative;
+}
+
+.benefcont h2 {
+    font-weight: 600;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.benefcont li {
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 1.8rem;
+}
+
+hr.new1 {
+    border: 1px solid white;
+    height: 300px;
+}
+
+.namba {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    list-style: none;
+    top: -450px;
+    left: -120px;
+    z-index: 4;
+    position: relative;
+    font-size: 200px;
+    font-weight: 700;
+    opacity: 30%;
+}
+
+.itji {
+    padding-right: 50px;
+}
+
+
+/* pricing */
+.sectionp {
+    width: 100%;
+    height: 130vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 120px 120;
+    
+}
+
+.hargap {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.hargatitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.card {
+    justify-content: center !important;
+    align-content: center !important;
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    -webkit-transform: skewY(-5deg) scale(1.5);
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price,
+.option {
+    position: relative;
+    z-index: 2;
+}
+
+.price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+}
+
+.option ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.card a {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: black;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.hargatitle {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #1652F0;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* cara Kerja Avadensi */
+.containerck{
+    position: relative;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    background-color: white;
+}
+
+.ckatitle {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #1652F0;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 0px !important;
+}
+
+.ckcont{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding-top: 50px;
+    z-index: 5;
+    position: relative;
+}
+
+.ckcont li {
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.garis {
+    border: 1px solid rgb(13, 17, 255);
+    height: 300px;
+}
+
+.containerT {
+    display: flex; /* Menggunakan display flex */
+    justify-content: left; /* Membuat elemen berada di ujung kiri dan kanan */
+    align-items: center; /* Menyelaraskan elemen vertikal di tengah */
+}
+
+.left-element,
+.right-element {
+    flex-basis: 20%; /* Lebar elemen sekitar 48% dari container */
+    padding: 10px; /* Padding untuk memberikan ruang di sekitar teks */
+    border: 0px solid #ccc; /* Contoh border untuk memisahkan elemen */
+    
+}
+
+.judul{
+    text-align: left !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    width: 300px;
+    text-align: justify;
+    color: rgb(25, 105, 255);
+    font-weight: 500 !important;
+    font-size: 3.0rem;
+}
+
+.nomor{
+    font-size: 75px !important;
+    color: rgb(255, 25, 25);
+    font-weight: 700 !important;
+}
