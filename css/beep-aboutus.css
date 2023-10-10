@@ -27,6 +27,7 @@ header {
     z-index: 10;
     padding: 0 10px;
 }
+
 /* Nav Bar */
 .navbar {
     display: flex;
@@ -76,7 +77,7 @@ header {
     font-weight: 600;
     text-decoration: none;
     transition: 0.1s ease;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar .links a:hover {
@@ -679,11 +680,11 @@ ul {
 }
 
 #main {
-    width: 56%;
+    width: 100%;
     background-color: #ffffff;
     position: relative;
     top: 25%;
-    left: 25%;
+    left: 0%;
     text-align: center;
     z-index: 5;
 }
@@ -701,41 +702,17 @@ ul {
     z-index: 4;
 }
 
-#main .block {
-    display: inline-block;
-    border: 1px solid transparent;
-    margin: 10px 10px;
-    overflow: hidden;
-    width: 190px;
-    height: 190px;
-}
-
-#main .block2 {
-    display: inline-block;
-    border: 1px solid transparent;
-    margin: 10px 10px;
-    overflow: hidden;
-    width: 300px;
-    height: 190px;
-    z-index: 10;
-}
-
-.BoulevardBeach {
-    width: 400px;
-    margin-left: -15%;
-}
-
 .keraji {
     width: 300px;
     margin-top: 10%;
 }
 
-.kakilima {
+.wellco {
     width: 300px;
-    margin-top: 10%;
+    margin: 10% 4% 2% 4%;
 }
 
-.wellco {
+.kakilima {
     width: 300px;
     margin-top: 10%;
 }
@@ -768,18 +745,6 @@ ul {
     height: 190px;
 }
 
-.strokebg2 {
-    width: 1143px;
-    height: 170px;
-    background-color: transparent;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #1652f0;
-    position: absolute;
-    top: 42%;
-    left: 4%;
-    z-index: 4;
-}
 
 .apaygdikerjakan img {
     position: absolute;
