@@ -25,7 +25,7 @@ header {
     top: -12px;
     left: 0;
     z-index: 10;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 /* Nav Bar */
 .navbar {
@@ -34,7 +34,7 @@ header {
     background-color: white;
     padding: 0px 0;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -672,118 +672,9 @@ ul {
 }
 
 /* footer */
-.lsgcorp .bg-corp {
+.lsgfooter{
     position: absolute;
-    width: 3000px !important;
-    max-width: 100%;
-    margin: 0 auto;
-    top: 0%;
-    right: 0%;
-    padding-bottom: 5px;
-    z-index: 4 !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-.lsgcorp h1 {
-    position: absolute;
-    top: 36.5%;
-    left: 60%;
-    margin-bottom: 50px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-    word-spacing: -1px;
-    z-index: 9;
-}
-
-.lsgcorp p {
-    position: absolute;
-    top: 45.5%;
-    left: 60%;
-    margin-bottom: 50px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-    word-spacing: -1px;
-    line-height: 25px;
-    z-index: 9;
-}
-
-.logo-avidencorp {
-    position: absolute;
-    width: 250px;
-    max-width: 100%;
-    margin: 0 auto;
-    top: 25%;
-    left: 60%;
-    padding-bottom: 5px;
-    z-index: 10 !important;
-}
-
-.linelsg {
-    position: absolute;
-    border: 1px solid black;
-    width: 250px;
-    top: 63.5%;
-    left: 60%;
-}
-
-.consultus {
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    text-transform: uppercase;
-    top: 67.5%;
-    left: 60%;
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-.consultkontak {
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    top: 75.5%;
-    left: 60%;
-    font-weight: 500;
-    font-size: 11px;
-    letter-spacing: 2px;
-}
-
-.memberof {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    position: absolute;
-    top: 83%;
-    left: 60%;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #9b9b9b;
-}
-
-.lsgundergo {
-    position: absolute;
-    top: 83%;
-    left: 67%;
-    width: 125px;
-}
-
-.footerundergo p {
-    font-family: 'Inter', sans-serif;
-}
-
-.fleft {
-    font-weight: 700;
-    position: absolute;
-    bottom: 6%;
-    left: 10%;
-    font-size: 17px;
-}
-
-.fright {
-    font-weight: 700;
-    position: absolute;
-    bottom: 6%;
-    right: 8%;
-    font-size: 17px;
-}
