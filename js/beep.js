@@ -103,3 +103,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mulaiButton = document.getElementById("GetStarted");
+
+    mulaiButton.addEventListener("click", function () {
+        const testimonialsSection = document.querySelector(".lsgfooter");
+        if (testimonialsSection) {
+            testimonialsSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
