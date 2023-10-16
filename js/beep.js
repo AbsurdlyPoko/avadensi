@@ -32,6 +32,26 @@ var testimonialsSlider = new Swiper('.testimonials-slider', {
         }
     }
 });
+
+src = "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+var testimonialsSlider = new Swiper('.testimonial-slider', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.js-testimonial-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 5
+        }
+    }
+});
 const socialButton = document.getElementById("socialButton");
 const videoButton = document.getElementById("videoButton");
 const websiteButton = document.getElementById("websiteButton");

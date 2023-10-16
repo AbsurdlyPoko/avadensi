@@ -233,6 +233,130 @@ header {
     font-weight: 700;
 }
 
+.ourpartner h1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1652f0;
+    z-index: 9;
+}
+
+.partnerour {
+    font-weight: 700;
+    color: black;
+}
+
+.ourpartner p {
+    position: relative;
+    top: -40px;
+    left: auto;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 9;
+}
+
+/* testimonial*/
+
+.testimonial-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 95.7%;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+}
+
+.testimonial-item {
+    background: transparent;
+    padding: 30px;
+    border-radius: 30px;
+    width: 200px !important;
+    height: 190px;
+}
+
+.testimonial-item .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.testimonial-item img {
+    max-width: 200px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+
+.sizedisamain img {
+    margin-top: -5%;
+    margin-left: 15%;
+    vertical-align: middle;
+    max-width: 180px;
+}
+
+.underswiped {
+    margin-top: 40px !important;
+}
+
+.underswiped1 {
+    max-width: 300px !important;
+    margin-left: -10% !important;
+}
+
+.testimonial-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+}
+
+.testimonial-item .job {
+    text-transform: capitalize;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonial-item p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonial-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}
+
+.testimonial .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonial .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: hsl(165, 100%, 50%);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.swiperbawah {
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+}
+
 /* testimonials*/
 .testimonials {
     padding: 0px 0;
