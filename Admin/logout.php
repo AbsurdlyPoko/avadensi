@@ -1,8 +1,6 @@
 <?php
 session_start();
-session_unset();
 session_destroy();
- 
-header("Location: ./user/index.html");
-exit();
+// Redirect to the login page:
+header('Location: login.html');
 ?>
