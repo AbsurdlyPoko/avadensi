@@ -220,22 +220,24 @@ header {
 }
 
 /* Foto */
-.container2 {
-    display: grid !important;
-    padding-top: 50px !important;
-    justify-content: center !important;
-    align-content: center !important;
-    grid-template-columns: 300px 300px 300px;
-    row-gap: 10px !important;
-    column-gap: 10px !important;
+.container-galery {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
   }
 
-  .foto {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    width: 300px;
-    height: 300px;
+  .gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 10px;
   }
 
+  .gallery img{
+    width: 100%;
+  }
   
 
   /* footer */
