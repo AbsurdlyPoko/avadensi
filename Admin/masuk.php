@@ -80,7 +80,7 @@ require 'function.php';
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Stock Barang</h1>
+                        <h1 class="mt-4">Barang Masuk</h1>
 
 
 
@@ -96,31 +96,33 @@ require 'function.php';
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>No</th>
+                                                <th>Tanggal</th>
                                                 <th>Nama Barang</th>
-                                                <th>Deskripsi</th>
-                                                <th>Stock</th>
+                                                <th>Jumlah</th>
+                                                <th>Keterangan</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php
-                                        $ambilsemuadatastock = mysqli_query($conn,"select * from stock");
-                                        $i = 1;
+                                        $ambilsemuadatastock = mysqli_query($conn,"select * from masuk m, stock s where s.idbarang = m.idbarang");
                                         while($data=mysqli_fetch_array($ambilsemuadatastock)){
+                                            $idb = $data['idbarang'];
+                                            $idm = $data['idmasuk'];
+                                            $tanggal = $data['tanggal'];
                                             $namabarang = $data['namabarang'];
-                                            $deskripsi = $data['deskripsi'];
-                                            $stock = $data['stock'];
-                                            $idb = $data['idbarang']
+                                            $qty = $data['qty'];
+                                            $keterangan = $data['keterangan'];
 
                                         ?>
                                         <tr>
-                                            <td><?=$i++;?></td>
+                                            <td><?=$tanggal;?></td>
                                             <td><?=$namabarang;?></td>
-                                            <td><?=$deskripsi;?></td>
-                                            <td><?=$stock;?></td>
+                                            <td><?=$qty;?></td>
+                                            <td><?=$keterangan;?></td>
+                                            </td>
                                             <td>
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idb;?>">
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idb;?>">
                                                     Edit
                                                 </button>
                                                 <input type="hidden" name="idbarangygmaudihapus" value="<?=$idb;?>">
@@ -129,6 +131,7 @@ require 'function.php';
                                                 </button>
                                             </td>
                                         </tr>
+
                                         <!-- Edit Model -->
                                         <div class="modal fade" id="edit<?=$idb;?>">
                                             <div class="modal-dialog">
@@ -142,19 +145,15 @@ require 'function.php';
                                                     <!-- Modal body -->
                                                     <form method="post">
                                                     <div class="modal-body">
-                                                            <input type="text" name="namabarang" value="<?=$namabarang;?>" class="form-control" required>
+                                                            <input type="text" name="keterangan" value="<?=$keterangan;?>" class="form-control" required>
                                                             <br>
-                                                            <input type="text" name="deskripsi" value="<?=$deskripsi;?>" class="form-control" required>
+                                                            <input type="number" name="qty" value="<?=$qty;?>" class="form-control" required>
                                                             <br>
                                                             <input type="hidden" name="idb" value="<?=$idb;?>">
-                                                            <button type="submit" class="btn btn-primary" name="updatebarang">Submit</button>
+                                                            <input type="hidden" name="idm" value="<?=$idm;?>">
+                                                            <button type="submit" class="btn btn-primary" name="updatebarangmasuk">Submit</button>
                                                         </div>
                                                     </form>
-
-                                                    <!-- Modal footer -->
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,20 +173,16 @@ require 'function.php';
                                                     <div class="modal-body">
                                                             Apakah anda yakin ingin menghapus <?=$namabarang;?>?
                                                             <input type="hidden" name="idb" value="<?=$idb;?>">
+                                                            <input type="hidden" name="kty" value="<?=$qty;?>">
                                                             <br>
                                                             <br>
-                                                            <button type="submit" class="btn btn-primary" name="hapusbarang">Hapus</button>
+                                                            <button type="submit" class="btn btn-primary" name="hapusbarangmasuk">Hapus</button>
                                                         </div>
                                                     </form>
-
-                                                    <!-- Modal footer -->
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <?php
                                         };
 
@@ -230,24 +225,40 @@ require 'function.php';
 <div class="modal fade" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content">
+            
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Tambah Barang</h4>
+                <h4 class="modal-title">Tambah Barang Masuk</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-            
-            <!-- Modal body -->
-            <form method="post" action="insert.php"> <!-- Form akan mengirimkan data ke insert.php -->
-                <div class="modal-body">
-                    <input type="text" name="namabarang" placeholder="Nama Barang" class="form-control" required>
-                    <br>
-                    <input type="text" name="deskripsi" placeholder="Deskripsi Barang" class="form-control" required>
-                    <br>
-                    <input type="number" name="stock" class="form-control" placeholder="Stock" required>
-                    <br>
-                    <button type="submit" class="btn btn-primary" name="addnewbarang">Submit</button>
-                </div>
-            </form>
+
+
+           <!-- Modal body -->
+           <form method="post">
+           <div class="modal-body">
+
+                <select name="barangnya" class="form-control">
+                    <?php
+                    $ambilsemuadatanya = mysqli_query($conn,"select * from stock");
+                    while($fetcharray = mysqli_fetch_array($ambilsemuadatanya)){
+                        $namabarangnya = $fetcharray['namabarang'];
+                        $idbarangnya = $fetcharray['idbarang'];
+                     ?>
+
+                     <option value="<?=$idbarangnya;?>"><?=$namabarangnya;?></option>
+       
+                     <?php
+                        }
+                    ?>
+            </select>
+                <br>
+                <input type="number" name="qty" class="form-control" placeholder="Quantity" required>
+                <br>
+                <input type="teks" name="penerima" class="form-control" placeholder="Penerima" required>
+                <br>
+                <button type="submit" class="btn btn-primary" name="barangmasuk">Submit</button>
+            </div>
+        </form>
 
             <!-- Modal footer -->
             <div class="modal-footer">
