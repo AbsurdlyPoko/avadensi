@@ -1,5 +1,8 @@
+body{
+	font-family: 'Inter' , sans-serif;
+}
 .navtop {
-	background-color: #2f3947;
+	background-color: #1652F0 !important;
 	height: 60px;
 	width: 100%;
 	border: 0;
@@ -19,20 +22,20 @@
 	font-size: 24px;
 	padding: 0;
 	margin: 0;
-	color: #eaebed;
+	color: #ffffff;
 	font-weight: normal;
 }
 .navtop div a {
 	padding: 0 20px;
 	text-decoration: none;
-	color: #c1c4c8;
+	color: #ffffff;
 	font-weight: bold;
 }
 .navtop div a i {
 	padding: 2px 8px 0 0;
 }
 .navtop div a:hover {
-	color: #eaebed;
+	color: #ffffff;
 }
 body.loggedin {
 	background-color: #f3f4f7;
@@ -46,7 +49,7 @@ body.loggedin {
 	padding: 25px 0;
 	font-size: 22px;
 	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
+	color: #1652F0;
 }
 .content > p, .content > div {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
@@ -59,7 +62,7 @@ body.loggedin {
 }
 .content > p table td:first-child, .content > div table td:first-child {
 	font-weight: bold;
-	color: #4a536e;
+	color: #1652F0;
 	padding-right: 15px;
 }
 .content > div p {
