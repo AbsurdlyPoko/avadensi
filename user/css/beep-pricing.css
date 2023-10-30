@@ -496,20 +496,22 @@ hr.new1 {
 
 .button-container1 {
     position: relative; /* Membuat elemen ini menjadi referensi untuk posisi absolut */
-    width: 200px; /* Sesuaikan dengan lebar elemen SVG */
+    width: 300px; /* Sesuaikan dengan lebar elemen SVG */
     height: 200px; /* Sesuaikan dengan tinggi elemen SVG */
 }
 
 .my-button1 {
-    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-top: 0px;
     position: absolute; /* Mengatur posisi tombol */
-    top: 5px; /* Sesuaikan dengan posisi vertikal yang Anda inginkan */
-    left: 130px; /* Sesuaikan dengan posisi horizontal yang Anda inginkan */
-    background-color: #1429e2; /* Warna latar belakang tombol */
+    top: 1px; /* Sesuaikan dengan posisi vertikal yang Anda inginkan */
+    left: 90px; /* Sesuaikan dengan posisi horizontal yang Anda inginkan */
+    background-color: #ee1a36; /* Warna latar belakang tombol */
     color: #ffffff; /* Warna teks tombol */
-    padding: 5px 20px; /* Ukuran padding tombol */
+    padding: 5px 30px; /* Ukuran padding tombol */
     border: none; /* Menghilangkan border tombol */
-    border-radius: 5%;
+    border-radius: 5px;
     cursor: pointer; /* Mengubah cursor menjadi tangan saat diarahkan ke tombol */
     z-index: 2; /* Menentukan tumpukan tampilan (di atas elemen SVG) */
 }
