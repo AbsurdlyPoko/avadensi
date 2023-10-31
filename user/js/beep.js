@@ -52,51 +52,23 @@ var testimonialsSlider = new Swiper('.testimonial-slider', {
         }
     }
 });
-const socialButton = document.getElementById("socialButton");
-const videoButton = document.getElementById("videoButton");
-const websiteButton = document.getElementById("websiteButton");
-const backgroundVideo = document.getElementById("background-video");
 
-function setActiveButton(activeButton) {
-    socialButton.classList.remove("active-button");
-    videoButton.classList.remove("active-button");
-    websiteButton.classList.remove("active-button");
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
-    activeButton.classList.add("active-button");
-
-    socialButton.querySelector("button").style.color = "#000000";
-    videoButton.querySelector("button").style.color = "#000000";
-    websiteButton.querySelector("button").style.color = "#000000";
-
-    // Menghentikan video jika ada tombol yang aktif
-    backgroundVideo.pause();
-
-    if (activeButton.id === "socialButton") {
-        backgroundVideo.src = "";
-    } else if (activeButton.id === "videoButton") {
-        backgroundVideo.src = "video.mp4";
-    } else if (activeButton.id === "websiteButton") {
-        backgroundVideo.src = "";
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
     }
-
-    // Memainkan video yang baru
-    backgroundVideo.play();
-}
-
-socialButton.addEventListener("click", function () {
-    setActiveButton(socialButton);
-    socialButton.querySelector("button").style.color = "#0000ff";
-});
-
-videoButton.addEventListener("click", function () {
-    setActiveButton(videoButton);
-    videoButton.querySelector("button").style.color = "#0000ff";
-});
-
-websiteButton.addEventListener("click", function () {
-    setActiveButton(websiteButton);
-    websiteButton.querySelector("button").style.color = "#0000ff";
-});
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
 
 // Hide/show the navbar on scroll
 let prevScrollPos = window.pageYOffset;

@@ -197,17 +197,11 @@ header {
     height: 600px;
 }
 
-.container2 {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 0px;
-    padding: 0 15px;
-    margin-bottom: 100px;
-}
 
 /* Review */
 .container {
     max-width: 1000px;
+    height: 600px;
     margin: auto;
     padding: 0 15px;
 }
@@ -1020,3 +1014,76 @@ ul {
     font-size: 17px;
 }
 
+.container2 {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 0 15px;
+    margin-bottom: 230px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.judulvideo{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.judulvideo h2{
+    color: black;
+    font-weight: 700;
+}
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: blue;
+    color: white;
+  }
+  
+ .vidiososmed{
+    border-radius: 5%;
+ }
+
+  /* Style the tab content */
+  .tabcontent {
+    width: 100%;
+    display: none;
+    padding: 6px 12px;
+    border: px solid #ccc;
+    border-top: none;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
