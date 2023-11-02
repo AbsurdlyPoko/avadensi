@@ -142,7 +142,7 @@ var testimonialsSlider = new Swiper('.testimonial-slider3', {
     },
     breakpoints: {
         767: {
-            slidesPerView: 5
+            slidesPerView: 4
         }
     }
 });
