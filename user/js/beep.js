@@ -70,6 +70,26 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   };
 
+  src = "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+var testimonialsSlider = new Swiper('.testimonial-slider', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.js-testimonial-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 5
+        }
+    }
+});
+
 // Hide/show the navbar on scroll
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
@@ -105,4 +125,24 @@ document.addEventListener("DOMContentLoaded", function () {
             testimonialsSection.scrollIntoView({ behavior: "smooth" });
         }
     });
+});
+
+src = "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+var testimonialsSlider = new Swiper('.testimonial-slider3', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
+    grabCursor: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.js-testimonial-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 5
+        }
+    }
 });

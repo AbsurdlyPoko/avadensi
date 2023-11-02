@@ -1017,7 +1017,7 @@ ul {
 .container2 {
     max-width: 1100px;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 50px;
     padding: 0 15px;
     margin-bottom: 230px;
     text-align: center;
@@ -1079,11 +1079,27 @@ ul {
   /* Style the tab content */
   .tabcontent {
     width: 100%;
+    height: auto;
     display: none;
-    padding: 6px 12px;
-    border: px solid #ccc;
-    border-top: none;
+    padding: 20px 12px;
+    border: 0px solid #ccc;
     align-items: center;
     text-align: center;
     margin-top: 30px;
   }
+
+  .testimonial-item2 img {
+    max-width: 200px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+
+.cassa{
+    max-width: 200px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
