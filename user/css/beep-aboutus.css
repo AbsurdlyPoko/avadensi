@@ -173,6 +173,18 @@ header {
 }
 
 @media (max-width: 760px) {
+    .logo-box {
+        width: 50px;
+        /* Lebar kotak logo */
+        height: 50px;
+        /* Tinggi kotak logo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        /* Mengatur sudut kotak */
+    }
+    
     .form-popup {
         width: 95%;
     }

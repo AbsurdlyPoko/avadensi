@@ -170,6 +170,18 @@ header {
 }
 
 @media (max-width: 760px) {
+    .logo-box {
+        width: 50px;
+        /* Lebar kotak logo */
+        height: 50px;
+        /* Tinggi kotak logo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        /* Mengatur sudut kotak */
+    }
+    
     .form-popup {
         width: 95%;
     }
@@ -185,26 +197,36 @@ header {
 
 /*main */
 .aboveus {
+    margin-top: 100px;
     font-family: 'Inter', sans-serif;
     text-align: center;
-    align-items: center;
-    padding-top: 100px;
+    padding: 0px 0;
 }
 
 .prititle {
     font-weight: 700;
     color: #1652F0;
+    margin-bottom: 30px;
 }
 
 .contentsup {
     display: flex;
-    gap: 100px;
-    padding-top: 50px;
-    list-style: none;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
     justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contentsup li {
+    margin: 30px;
+    text-align: center;
 }
 
 .contentsup a {
+    display: block; /* Make the links a block element for better spacing */
+    padding: 10px; /* Add padding to the links for touch-friendliness */
+    border: 0px solid #1652F0; /* Add a border for better touch target */
+    border-radius: 5px;
     color: #000000;
     font-size: 1.50rem;
     font-weight: 600;
@@ -215,28 +237,54 @@ header {
 .aboveus .contentsup a:hover {
     color: #ffffff;
     background-color: #1652F0;
-    padding: 15px 15px;
-    border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+    
+    .contentsup {
+        flex-direction: row; /* Change the flex direction to horizontal on smaller screens */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contentsup li {
+        margin: 10px;
+        flex: 1; /* Make each list item take equal space */
+        text-align: center; /* Center the text in the list items */
+    }
+
+    .contentsup a {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+        padding: 10px; /* Add padding for touch-friendliness */
+        border-radius: 5px;
+    }
 }
 
 /* Foto */
 .container-galery {
     width: 100%;
-    min-height: 100vh;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 8%;
+    padding: 30px 8%;
   }
-
-  .gallery{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 10px;
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
   }
-
-  .gallery img{
+  
+  .gallery img {
     width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+      grid-gap: 5px; /* Reduce the gap for smaller screens */
+    }
   }
   
 

@@ -35,6 +35,7 @@ header {
     padding: 0px 0;
     align-items: center;
     max-width: 1400px;
+    min-width: 200px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -172,6 +173,18 @@ header {
 }
 
 @media (max-width: 760px) {
+    .logo-box {
+        width: 50px;
+        /* Lebar kotak logo */
+        height: 50px;
+        /* Tinggi kotak logo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        /* Mengatur sudut kotak */
+    }
+    
     .form-popup {
         width: 95%;
     }
@@ -189,12 +202,14 @@ header {
 .containerlobi {
     position: relative;
     width: 1170px;
+    min-width: 200px;
     padding-left: 0% !important;
     padding-right: 0% !important;
     top: 10%;
     margin-left: auto;
     margin-right: auto;
     height: 600px;
+    min-height: 200px;
 }
 
 
@@ -204,17 +219,6 @@ header {
     height: 600px;
     margin: auto;
     padding: 0 15px;
-}
-
-
-.containerfooter {
-    position: relative;
-    width: 1170px;
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-    margin-left: auto;
-    margin-right: auto;
-    height: 655px;
 }
 
 /* section header*/
@@ -505,8 +509,9 @@ ul {
 
 .my-video {
     position: absolute;
+    min-height: 200px;
     top: 56px;
-    left: 528px;
+    left: 550px;
   }
 
 
@@ -811,11 +816,13 @@ ul {
 .containerfooter {
     position: relative;
     width: 1170px;
+    min-width: 200px;
     padding-left: 0% !important;
     padding-right: 0% !important;
     margin-left: auto;
     margin-right: auto;
     height: 655px;
+    min-height: 200px;
 }
 .lsgcorp .bg-corp {
     position: absolute;
@@ -1102,4 +1109,18 @@ ul {
     display: grid;
     margin-left: -30px;
     margin-top: 15px;
+}
+
+/* Jika ukuran layar 680px atau kurang dari itu */
+
+@media screen and (max-width:680px){
+
+	#maincontent{
+		width: auto;
+		float: none;
+	}
+	#sidebar{
+		width: auto;
+		float: none;
+	}
 }
