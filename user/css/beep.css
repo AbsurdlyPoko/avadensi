@@ -174,9 +174,9 @@ header {
 
 @media (max-width: 760px) {
     .logo-box {
-        width: 50px;
+        width: 60px;
         /* Lebar kotak logo */
-        height: 50px;
+        height: 60px;
         /* Tinggi kotak logo */
         display: flex;
         align-items: center;
@@ -202,14 +202,92 @@ header {
 .containerlobi {
     position: relative;
     width: 1170px;
-    min-width: 200px;
+    
     padding-left: 0% !important;
     padding-right: 0% !important;
     top: 10%;
     margin-left: auto;
     margin-right: auto;
     height: 600px;
+}
+
+.brand-promo {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    position: relative;
+    left: 183px;
+    padding: 0px 5px;
+    top: 84px;
+}
+
+.brand-promo h1 {
+    font-weight: 710;
+    color: #1652F0;
+    font-size: xx-large;
+}
+
+.my-video {
+    position: absolute;
     min-height: 200px;
+    width: 500px; 
+    height: 400px;
+    top: 56px;
+    left: 600px;
+  }
+
+
+@media (max-width: 1400px) {
+
+    /* Adjust text styles for smaller screens */
+
+    .brand-promo {
+        left: 100px;
+        top: 70px;
+    }
+
+    .brand-promo h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .containerlobi{
+        height: 700px;
+    }
+    
+    .brand-promo {
+        left: 10px;
+        top: 20px;
+    }
+
+    .brand-promo h1 {
+        font-size: 35px;
+    }
+
+    .brand-promo p {
+        font-size: 11px;
+    }
+
+    .my-video {
+        position: relative;
+        width: 400px; 
+        height: 300px;
+        top: 50px;
+        left: -10px;
+    }
+}
+
+.brand-promo .red-wow {
+    color: #F02724;
+    font-weight: 710;
+    /* Red color for "WOW" */
+}
+
+.brand-promo p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 370;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -489,68 +567,6 @@ ul {
     /* Tambahkan margin atas sesuai kebutuhan Anda */
 }
 
-/* Change button color on hover */
-
-/* rawr main title*/
-.brand-promo {
-    font-family: 'Inter', sans-serif;
-    margin: auto;
-    position: relative;
-    left: 183px;
-    padding: 0px 5px;
-    top: 84px;
-}
-
-.brand-promo h1 {
-    font-weight: 710;
-    color: #1652F0;
-    font-size: xx-large;
-}
-
-.my-video {
-    position: absolute;
-    min-height: 200px;
-    top: 56px;
-    left: 550px;
-  }
-
-
-@media (max-width: 1400px) {
-
-    /* Adjust text styles for smaller screens */
-
-    .brand-promo {
-        left: 100px;
-        top: 70px;
-    }
-
-    .brand-promo h1 {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 500px) {
-    .brand-promo {
-        left: 50px;
-    }
-
-    .brand-promo h1 {
-        font-size: 50px;
-    }
-}
-
-.brand-promo .red-wow {
-    color: #F02724;
-    font-weight: 710;
-    /* Red color for "WOW" */
-}
-
-.brand-promo p {
-    margin-top: 20px;
-    color: hsl(0, 0%, 0%);
-    font-weight: 370;
-    font-family: 'Inter', sans-serif;
-}
 
 /* pricing */
 .sectionp {
@@ -1081,7 +1097,19 @@ ul {
   
  .vidiososmed{
     border-radius: 5%;
+    width: 600px;
+    height: 350px;
+
  }
+
+ @media (max-width: 500px) {
+    .vidiososmed{
+        border-radius: 5%;
+        width: 320px;
+        height: 210px;
+    
+     }
+}
 
   /* Style the tab content */
   .tabcontent {
