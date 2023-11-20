@@ -602,3 +602,210 @@ hr.new1 {
     color: rgb(255, 25, 25);
     font-weight: 700 !important;
 }
+
+ /* footer */
+ .containerfooter {
+    position: relative;
+    width: 1170px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 655px;
+}
+.lsgcorp .bg-corp {
+    position: absolute;
+    max-width: 100%;
+    margin: 0px auto;
+    top: -35px;
+    right: 0%;
+    padding-bottom: 5px;
+    width: 3000px !important;
+}
+
+.lsgcorp h1 {
+    position: absolute;
+    top: 160px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    word-spacing: -1px;
+    z-index: 9;
+}
+
+.lsgcorp p {
+    position: absolute;
+    top: 215px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    word-spacing: -1px;
+    line-height: 25px;
+    z-index: 9;
+}
+
+.formpage {
+    position: absolute;
+    left: 700px;
+    top: 320px;
+    font-size: 20px;
+  }
+
+.formpage label{
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: smaller;
+}
+
+.formpage input{
+    background-color: rgb(22, 82, 240);
+    border: 1px solid #fff;
+    padding: 0 0px;
+}
+
+#name{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#email{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#pesan{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: rgb(22, 82, 240);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#submit{
+    padding: 5px 0px;
+    border-radius: 8px;
+    width: 185px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 82, 240);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.yuktim{
+    position: absolute;
+    top: 275px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    word-spacing: -1px;
+    line-height: 25px;
+    z-index: 9;
+}
+
+.logo-avidencorp {
+    position: absolute;
+    width: 250px;
+    max-width: 100%;
+    margin: 0px auto;
+    top: 75px;
+    left: 687px;
+    padding-bottom: 5px;
+    z-index: 10 !important;
+}
+
+.linelsg {
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    width: 250px;
+    top: 550px;
+    left: 145px;
+}
+
+.lsgfooter{
+    background-color: rgb(22, 82, 240);
+    margin-top: 10%;
+    height: 710px;
+}
+
+.consultus {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    text-transform: uppercase;
+    top: 594px;
+    left: 144px;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.consultkontak {
+    font-family: Inter, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 642px;
+    left: 144px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+.memberof {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: absolute;
+    top: 83%;
+    left: 60%;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #9b9b9b;
+}
+
+.lsgundergo {
+    position: absolute;
+    top: 83%;
+    left: 67%;
+    width: 125px;
+}
+
+.footerundergo p {
+    font-family: 'Inter', sans-serif;
+}
+
+.fleft {
+    font-weight: 700;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.fright {
+    font-weight: 700;
+    position: absolute;
+    bottom: 6%;
+    right: 8%;
+    font-size: 17px;
+}

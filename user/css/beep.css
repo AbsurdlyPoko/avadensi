@@ -232,7 +232,7 @@ header {
     width: 500px; 
     height: 400px;
     top: 56px;
-    left: 600px;
+    left: 550px;
   }
 
 
@@ -311,6 +311,7 @@ header {
     font-weight: 700;
     color: hsl(0, 0%, 0%);
     line-height: 1.2;
+    margin-top: -150px;
 }
 
 .p-title {
