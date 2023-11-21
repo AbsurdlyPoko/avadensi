@@ -1072,11 +1072,13 @@ ul {
 .containerfooter {
     position: relative;
     width: 1170px;
+    min-width: 200px;
     padding-left: 0% !important;
     padding-right: 0% !important;
     margin-left: auto;
     margin-right: auto;
     height: 655px;
+    min-height: 200px;
 }
 .lsgcorp .bg-corp {
     position: absolute;
@@ -1085,7 +1087,7 @@ ul {
     top: -35px;
     right: 0%;
     padding-bottom: 5px;
-    width: 3000px !important;
+    width: 3000px;
 }
 
 .lsgcorp h1 {
@@ -1172,6 +1174,7 @@ ul {
     color: rgb(22, 82, 240);
     font-size: medium;
     font-weight: bold;
+    font-family: 'Inter', sans-serif;
 }
 
 .yuktim{
@@ -1273,4 +1276,291 @@ ul {
     bottom: 6%;
     right: 8%;
     font-size: 17px;
+}
+
+@media (max-width: 500px){
+    .lsgcorp .bg-corp {
+        position: absolute;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 62px;
+        right: 600px;
+        padding-bottom: 5px;
+        width: 546px;
+    }
+    .lsgfooter{
+        background-color: rgb(22, 82, 240);
+        margin-top: 1390px;
+        height: 1200px;
+    }
+    .logo-avidencorp{
+        position: absolute;
+        width: 250px;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 27px;
+        left: 56px;
+        padding-bottom: 5px;
+        z-index: 10 !important;
+    }
+    .lsgcorp h1 {
+        position: absolute;
+        top: 337px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        z-index: 9;
+    }
+    .lsgcorp p {
+        position: absolute;
+        top: 390px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    #name{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #email{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #pesan{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        background-color: rgb(22, 82, 240);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #submit{
+        padding: 5px 0px;
+        position: relative;
+        left: -280px;
+        top: 39px;
+        border-radius: 8px;
+        width: 185px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(22, 82, 240);
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+    }
+    .yuktim {
+        position: absolute;
+        top: 454px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    .formpage {
+        position: absolute;
+        left: 10px;
+        top: 513px;
+        font-size: 20px;
+    }
+    .linelsg {
+        position: absolute;
+        border: 1px solid rgb(255, 255, 255);
+        width: 250px;
+        top: 938px;
+        left: 60px;
+    }
+    .consultus {
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        top: 980px;
+        left: 100px;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    
+    .consultkontak {
+        font-family: Inter, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        top: 1030px;
+        left: 100px;
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 320px){
+    .my-button1 {
+        position: absolute;
+        left: 50px;
+    }
+    .lsgcorp .bg-corp {
+        position: absolute;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 62px;
+        right: 630px;
+        padding-bottom: 5px;
+        width: 546px;
+    }
+    .lsgfooter{
+        background-color: rgb(22, 82, 240);
+        margin-top: 1390px;
+        height: 1130px;
+    }
+    .logo-avidencorp{
+        position: absolute;
+        width: 250px;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 27px;
+        left: 30px;
+        padding-bottom: 5px;
+        z-index: 10 !important;
+    }
+    .lsgcorp h1 {
+        position: absolute;
+        top: 337px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        z-index: 9;
+    }
+    .lsgcorp p {
+        position: absolute;
+        top: 390px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    #name{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #email{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #pesan{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        background-color: rgb(22, 82, 240);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #submit{
+        padding: 5px 0px;
+        position: relative;
+        left: -305px;
+        top: 39px;
+        border-radius: 8px;
+        width: 185px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(22, 82, 240);
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+    }
+    .yuktim {
+        position: absolute;
+        top: 454px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    .formpage {
+        position: absolute;
+        left: 7px;
+        top: 513px;
+        font-size: 20px;
+    }
+    .linelsg {
+        position: absolute;
+        border: 1px solid rgb(255, 255, 255);
+        width: 250px;
+        top: 938px;
+        left: 15px;
+    }
+    .consultus {
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        top: 980px;
+        left: 15px;
+        font-weight: 800;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    .consultkontak {
+        font-family: Inter, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        top: 1030px;
+        left: 15px;
+        font-weight: 500;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
 }
