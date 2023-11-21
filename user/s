@@ -1,0 +1,41 @@
+.lsgcorp {
+    width: 225px;
+    margin-top: 25%;
+    margin-right: 15%;
+}
+.lsgcorp .bg-corp {
+    position: absolute;
+    width: 3000px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    padding-bottom: 5px;
+    z-index: 4 !important;
+}
+.lsgcorp h1 {
+    position: absolute;
+    top: 36.5%;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    word-spacing: -1px;
+    z-index: 9;
+}
+
+.lsgcorp p {
+    position: absolute;
+    top: 45.5%;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    word-spacing: -1px;
+    line-height: 25px;
+    z-index: 9;
+}

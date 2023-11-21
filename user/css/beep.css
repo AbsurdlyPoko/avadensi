@@ -1,0 +1,1439 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: Bird Of Paradise;
+    src: url();
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url("images/hero-bg.jpg") center/cover no-repeat;
+    font-family: 'inter', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: -12px;
+    left: 0;
+    z-index: 10;
+    padding: 0 0px;
+}
+/* Nav Bar */
+.navbar {
+    display: flex;
+    transition: top 0.3s;
+    background-color: white;
+    padding: 0px 0;
+    align-items: center;
+    max-width: 1400px;
+    min-width: 200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .hamburger-btn {
+    display: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.navbar .logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 35px;
+    padding-top: 5px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar .links a {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.1s ease;
+    font-family: 'Inter',sans-serif;
+}
+
+.navbar .links a:hover {
+    color: #ffffff;
+    background-color: #1652F0;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.navbar .login-btn {
+
+    color: #1652F0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.navbar .login-btn:hover {
+    color: #ffffff;
+    background-color: #1652F0;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.logo-box {
+    width: 100px;
+    /* Lebar kotak logo */
+    height: 100px;
+    /* Tinggi kotak logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* Mengatur sudut kotak */
+}
+
+.logo {
+    max-width: 150%;
+    max-height: 100%;
+}
+
+@media (max-width: 950px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .logo img {
+        display: none;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #fff;
+        transition: 0.2s ease;
+    }
+
+    .navbar .links.show-menu {
+        left: 0;
+    }
+
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .navbar .links a:hover {
+        color: #00BCD4;
+    }
+
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .logo-box {
+        width: 60px;
+        /* Lebar kotak logo */
+        height: 60px;
+        /* Tinggi kotak logo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        /* Mengatur sudut kotak */
+    }
+    
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}
+
+/*rawr hero section pertama*/
+.containerlobi {
+    position: relative;
+    width: 1170px;
+    
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.brand-promo {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    position: relative;
+    left: 183px;
+    padding: 0px 5px;
+    top: 84px;
+}
+
+.brand-promo h1 {
+    font-weight: 710;
+    color: #1652F0;
+    font-size: xx-large;
+}
+
+.my-video {
+    position: absolute;
+    min-height: 200px;
+    width: 500px; 
+    height: 400px;
+    top: 56px;
+    left: 600px;
+  }
+
+
+@media (max-width: 1400px) {
+
+    /* Adjust text styles for smaller screens */
+
+    .brand-promo {
+        left: 100px;
+        top: 70px;
+    }
+
+    .brand-promo h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .containerlobi{
+        height: 700px;
+    }
+    
+    .brand-promo {
+        left: 10px;
+        top: 20px;
+    }
+
+    .brand-promo h1 {
+        font-size: 35px;
+    }
+
+    .brand-promo p {
+        font-size: 11px;
+    }
+
+    .my-video {
+        position: relative;
+        width: 400px; 
+        height: 300px;
+        top: 50px;
+        left: -10px;
+    }
+}
+
+.brand-promo .red-wow {
+    color: #F02724;
+    font-weight: 710;
+    /* Red color for "WOW" */
+}
+
+.brand-promo p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 370;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Review */
+.container {
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* section header*/
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+}
+
+.p-title {
+    font-weight: 700;
+}
+
+.ourpartner h1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1652f0;
+    z-index: 9;
+}
+
+.partnerour {
+    font-weight: 700;
+    color: black;
+}
+
+.ourpartner p {
+    position: relative;
+    top: -40px;
+    left: auto;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 9;
+}
+
+/* testimonial*/
+
+.testimonial-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 95.7%;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+}
+
+.testimonial-item {
+    background: transparent;
+    padding: 30px;
+    border-radius: 30px;
+    width: 200px !important;
+    height: 190px;
+}
+
+.testimonial-item .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.testimonial-item img {
+    max-width: 200px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+
+.sizedisamain img {
+    margin-top: -5%;
+    margin-left: 15%;
+    vertical-align: middle;
+    max-width: 180px;
+}
+
+.underswiped {
+    margin-top: 40px !important;
+}
+
+.underswiped1 {
+    max-width: 300px !important;
+    margin-left: -10% !important;
+}
+
+.testimonial-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+}
+
+.testimonial-item .job {
+    text-transform: capitalize;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonial-item p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonial-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}
+
+.testimonial .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonial .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: hsl(165, 100%, 50%);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.swiperbawah {
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+}
+
+/* testimonials*/
+.testimonials {
+    padding: 0px 0;
+}
+
+.testimonials-item {
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.testimonials-item .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.testimonials-item img {
+    width: 57px;
+    /* Lebar maksimum gambar */
+    height: 57px;
+    /* Tinggi maksimum gambar (opsional, sesuaikan jika diperlukan) */
+    border-radius: 50%;
+    /* Membuat gambar bulat */
+    margin-right: 20px;
+    vertical-align: middle;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+.testimonials-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+}
+
+.testimonials-item .job {
+    text-transform: capitalize;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item .rating {
+    margin-top: 0px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+    position: relative;
+    left: 300px;
+    top: 25px;
+}
+
+.review-text {
+    flex: 1;
+    padding-left: 10px;
+    /* Sesuaikan jarak antara Rating dan Sangat Bagus */
+}
+
+.review-text h3 {
+    font-weight: 700;
+    margin-top: 1px;
+    position: relative;
+}
+
+
+.testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: #1652F0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Tulisan Wow*/
+.red-wow {
+    color: #F02724;
+    font-weight: 800;
+    font-family: 'Inter' , sans-serif ;
+    /* Warna merah untuk kata "WOW" */
+}
+
+.blue-avadensi {
+    color: #1652F0;
+    font-weight: 800;
+    /* Warna merah untuk kata "Avadensi" */
+}
+
+/*mulai button*/
+.mulai {
+    background-color: #1652F0;
+    /* Warna latar belakang tombol */
+    color: white;
+    /* Warna teks pada tombol */
+    padding: 10px 30px;
+    /* Ruang di sekitar teks dalam tombol */
+    border: none;
+    /* Hapus border tombol */
+    border-radius: 20px;
+    /* Sudut tombol yang lebih bulat */
+    cursor: pointer;
+    /* Ubah kursor mouse menjadi tanda panah saat di atas tombol */
+    font-size: 16px;
+    /* Ukuran teks pada tombol */
+    position: relative;
+    /* Atur posisi tombol */
+    left: 0%;
+    /* Geser tombol ke kiri sejauh 15% dari lebar kontainer parent */
+    margin-top: 20px;
+    /* Tambahkan margin atas sesuai kebutuhan Anda */
+}
+
+
+/* pricing */
+.sectionp {
+    width: 100%;
+    height: 120vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 120px 120;
+}
+
+.titleP {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.ptitleP {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    -webkit-transform: skewY(-5deg) scale(1.5);
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price,
+.option {
+    position: relative;
+    z-index: 2;
+}
+
+.price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+}
+
+.option ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.card a {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: black;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.button-container1 {
+    position: relative; /* Membuat elemen ini menjadi referensi untuk posisi absolut */
+    width: 300px; /* Sesuaikan dengan lebar elemen SVG */
+    height: 200px; /* Sesuaikan dengan tinggi elemen SVG */
+    font-family: 'Inter', sans-serif;
+}
+
+.my-button1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    position: absolute; /* Mengatur posisi tombol */
+    top: 10px; /* Sesuaikan dengan posisi vertikal yang Anda inginkan */
+    left: 70px; /* Sesuaikan dengan posisi horizontal yang Anda inginkan */
+    background-color: #1429e2; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 30px; /* Ukuran padding tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 15px;
+    cursor: pointer; /* Mengubah cursor menjadi tangan saat diarahkan ke tombol */
+    z-index: 10; /* Menentukan tumpukan tampilan (di atas elemen SVG) */
+}
+
+.my-button1:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* */
+.text-box {
+    position: relative;
+    top: 0%;
+    left: 165 px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-boxi {
+    position: relative;
+    padding: 150px 200px;
+    /* Menambahkan padding pada sisi kiri dan kanan untuk meletakkan teks dan tombol */
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* Mengatur teks ke kiri */
+}
+
+.video-brightness {
+    filter: brightness(80%);
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.wow-text {
+    font-family: 'Inter', sans-serif;
+    max-width: 1000px;
+    position: relative;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #2f2f2f ;
+}
+
+.wow-text2 {
+    font-family: 'Inter', sans-serif;
+    max-width: 1000px;
+    position: relative;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #2f2f2f ;
+    margin-bottom: 10px;
+}
+.wow-text-undergo {
+    font-family: 'Inter', sans-serif;
+    max-width: 1000px;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #2f2f2f ;
+    margin-bottom: 30px;
+}
+
+.management-text {
+    font-size: 16px;
+    color: #ff0000;
+    position: relative;
+    right: 10px;
+}
+
+.management-button {
+    margin-top: 10px;
+}
+
+.management-button button {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: #2f2f2f ;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Kode tambahan untuk pengaturan warna latar belakang */
+#socialButton.active-button~.text-box {
+    background-color: #ffcccb;
+    /* Ganti warna latar belakang menjadi merah muda saat tombol "Social Media Management" diklik */
+}
+
+#videoButton.active-button~.text-box {
+    background-color: #cbffcc;
+    /* Ganti warna latar belakang menjadi hijau muda saat tombol "Video Production" diklik */
+}
+
+#websiteButton.active-button~.text-box {
+    background-color: #cccfff;
+    /* Ganti warna latar belakang menjadi biru muda saat tombol "Website" diklik */
+}
+
+/* footer */
+.containerfooter {
+    position: relative;
+    width: 1170px;
+    min-width: 200px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 655px;
+    min-height: 200px;
+}
+.lsgcorp .bg-corp {
+    position: absolute;
+    max-width: 100%;
+    margin: 0px auto;
+    top: -35px;
+    right: 0%;
+    padding-bottom: 5px;
+    width: 3000px;
+}
+
+.lsgcorp h1 {
+    position: absolute;
+    top: 160px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    word-spacing: -1px;
+    z-index: 9;
+}
+
+.lsgcorp p {
+    position: absolute;
+    top: 215px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    word-spacing: -1px;
+    line-height: 25px;
+    z-index: 9;
+}
+
+.formpage {
+    position: absolute;
+    left: 700px;
+    top: 320px;
+    font-size: 20px;
+  }
+
+.formpage label{
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: smaller;
+}
+
+.formpage input{
+    background-color: rgb(22, 82, 240);
+    border: 1px solid #fff;
+    padding: 0 0px;
+}
+
+#name{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#email{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#pesan{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: rgb(22, 82, 240);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#submit{
+    padding: 5px 0px;
+    border-radius: 8px;
+    width: 185px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 82, 240);
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.yuktim{
+    position: absolute;
+    top: 275px;
+    left: 60%;
+    margin-bottom: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    word-spacing: -1px;
+    line-height: 25px;
+    z-index: 9;
+}
+
+.logo-avidencorp {
+    position: absolute;
+    width: 250px;
+    max-width: 100%;
+    margin: 0px auto;
+    top: 75px;
+    left: 687px;
+    padding-bottom: 5px;
+    z-index: 10 !important;
+}
+
+.linelsg {
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    width: 250px;
+    top: 550px;
+    left: 145px;
+}
+
+.lsgfooter{
+    background-color: rgb(22, 82, 240);
+    margin-top: 10%;
+    height: 710px;
+}
+
+.consultus {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    text-transform: uppercase;
+    top: 594px;
+    left: 144px;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.consultkontak {
+    font-family: Inter, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 642px;
+    left: 144px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+.memberof {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: absolute;
+    top: 83%;
+    left: 60%;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #9b9b9b;
+}
+
+.lsgundergo {
+    position: absolute;
+    top: 83%;
+    left: 67%;
+    width: 125px;
+}
+
+.footerundergo p {
+    font-family: 'Inter', sans-serif;
+}
+
+.fleft {
+    font-weight: 700;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.fright {
+    font-weight: 700;
+    position: absolute;
+    bottom: 6%;
+    right: 8%;
+    font-size: 17px;
+}
+
+@media (max-width: 500px){
+    .lsgcorp .bg-corp {
+        position: absolute;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 62px;
+        right: 600px;
+        padding-bottom: 5px;
+        width: 546px;
+    }
+    .lsgfooter{
+        background-color: rgb(22, 82, 240);
+        margin-top: 1390px;
+        height: 1200px;
+    }
+    .logo-avidencorp{
+        position: absolute;
+        width: 250px;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 27px;
+        left: 56px;
+        padding-bottom: 5px;
+        z-index: 10 !important;
+    }
+    .lsgcorp h1 {
+        position: absolute;
+        top: 337px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        z-index: 9;
+    }
+    .lsgcorp p {
+        position: absolute;
+        top: 390px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    #name{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #email{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #pesan{
+        width: 355px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        background-color: rgb(22, 82, 240);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #submit{
+        padding: 5px 0px;
+        position: relative;
+        left: -360px;
+        top: 39px;
+        border-radius: 8px;
+        width: 185px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(22, 82, 240);
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+    }
+    .yuktim {
+        position: absolute;
+        top: 454px;
+        left: 35px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    .formpage {
+        position: absolute;
+        left: 10px;
+        top: 513px;
+        font-size: 20px;
+    }
+    .linelsg {
+        position: absolute;
+        border: 1px solid rgb(255, 255, 255);
+        width: 250px;
+        top: 938px;
+        left: 15px;
+    }
+    .consultus {
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        top: 980px;
+        left: 15px;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    
+    .consultkontak {
+        font-family: Inter, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        top: 1030px;
+        left: 15px;
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 320px){
+    .my-button1 {
+        position: absolute;
+        left: 50px;
+    }
+    .lsgcorp .bg-corp {
+        position: absolute;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 62px;
+        right: 630px;
+        padding-bottom: 5px;
+        width: 546px;
+    }
+    .lsgfooter{
+        background-color: rgb(22, 82, 240);
+        margin-top: 1390px;
+        height: 1130px;
+    }
+    .logo-avidencorp{
+        position: absolute;
+        width: 250px;
+        max-width: 100%;
+        margin: 0px auto;
+        top: 27px;
+        left: 30px;
+        padding-bottom: 5px;
+        z-index: 10 !important;
+    }
+    .lsgcorp h1 {
+        position: absolute;
+        top: 337px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        z-index: 9;
+    }
+    .lsgcorp p {
+        position: absolute;
+        top: 390px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    #name{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #email{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #pesan{
+        width: 300px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        background-color: rgb(22, 82, 240);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    #submit{
+        padding: 5px 0px;
+        position: relative;
+        left: -305px;
+        top: 39px;
+        border-radius: 8px;
+        width: 185px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(22, 82, 240);
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+    }
+    .yuktim {
+        position: absolute;
+        top: 454px;
+        left: 21px;
+        margin-bottom: 50px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        word-spacing: -1px;
+        line-height: 25px;
+        z-index: 9;
+    }
+    .formpage {
+        position: absolute;
+        left: 7px;
+        top: 513px;
+        font-size: 20px;
+    }
+    .linelsg {
+        position: absolute;
+        border: 1px solid rgb(255, 255, 255);
+        width: 250px;
+        top: 938px;
+        left: 15px;
+    }
+    .consultus {
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        top: 980px;
+        left: 15px;
+        font-weight: 800;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    .consultkontak {
+        font-family: Inter, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        top: 1030px;
+        left: 15px;
+        font-weight: 500;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}
+
+
+.container2 {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 15px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.judulvideo{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.judulvideo h2{
+    color: black;
+    font-weight: 700;
+}
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: blue;
+    color: white;
+  }
+  
+ .vidiososmed{
+    border-radius: 5%;
+    width: 600px;
+    height: 350px;
+
+ }
+
+ @media (max-width: 500px) {
+    .vidiososmed{
+        border-radius: 5%;
+        width: 320px;
+        height: 210px;
+    
+     }
+}
+
+  /* Style the tab content */
+  .tabcontent {
+    width: 100%;
+    height: auto;
+    display: none;
+    padding: 20px 10px;
+    border: 0px solid #ccc;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .testimonial-item2 img {
+    max-width: 250px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+
+.cassa{
+    max-width: 200px;
+    vertical-align: middle;
+    display: grid;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+
+/* Container Client*/
+
+.containerclient {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
