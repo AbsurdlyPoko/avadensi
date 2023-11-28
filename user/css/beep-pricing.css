@@ -815,53 +815,26 @@ hr.new1 {
 
 @media (max-width: 500px){
     .lsgcorp .bg-corp {
-        position: absolute;
-        max-width: 100%;
-        margin: 0px auto;
         top: 62px;
         right: 600px;
-        padding-bottom: 5px;
         width: 546px;
     }
     .lsgfooter{
         background-color: rgb(22, 82, 240);
-        margin-top: 1390px;
+        margin-top: 900px;
         height: 1200px;
     }
     .logo-avidencorp{
-        position: absolute;
-        width: 250px;
-        max-width: 100%;
-        margin: 0px auto;
         top: 27px;
         left: 56px;
-        padding-bottom: 5px;
-        z-index: 10 !important;
     }
     .lsgcorp h1 {
-        position: absolute;
         top: 337px;
         left: 35px;
-        margin-bottom: 50px;
-        font-family: Inter, sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        word-spacing: -1px;
-        z-index: 9;
     }
     .lsgcorp p {
-        position: absolute;
         top: 390px;
         left: 35px;
-        margin-bottom: 50px;
-        font-family: Inter, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        word-spacing: -1px;
-        line-height: 25px;
-        z-index: 9;
     }
     #name{
         width: 355px;
@@ -906,17 +879,8 @@ hr.new1 {
         font-family: 'Inter', sans-serif;
     }
     .yuktim {
-        position: absolute;
         top: 454px;
         left: 35px;
-        margin-bottom: 50px;
-        font-family: Inter, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        word-spacing: -1px;
-        line-height: 25px;
-        z-index: 9;
     }
     .formpage {
         position: absolute;
@@ -1097,5 +1061,107 @@ hr.new1 {
         font-weight: 500;
         font-size: 9px;
         letter-spacing: 2px;
+    }
+}
+@media (max-width: 320px) {
+    .container{
+        height: 130%;
+    }
+    .descsosmed {
+        font-weight: 400;
+        text-align: justify;
+        font-size: larger;
+        padding-top: 30px;
+    }
+    .sosmed{
+        margin-left: -83px;
+        font-size: 28px;
+        margin-top: -57px;
+    }
+    .imgsosmed {
+        position: absolute;
+        top: 415px;
+        right: 15px;
+        max-width: 300px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .container{
+        height: 130%;
+    }
+    .sosmed{
+        margin-left: -69px;
+        font-size: 28px;
+        margin-top: -57px;
+    }
+    .descsosmed {
+        font-weight: 400;
+        text-align: left;
+        margin-left: -70px;
+        font-size: 15px;
+        width: 303px;
+        padding-top: 8px;
+    }
+    .imgsosmed {
+        position: absolute;
+        top: 415px;
+        right: 40px;
+        max-width: 300px;
+    }
+    .beneftitle {
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .benefcont {
+        flex-direction: column;
+        align-items: center;
+    }
+    hr.new1{
+        border: 1px solid white;
+        width: 300px;
+        height: 0px;
+        margin-top: auto;
+    }
+    .container2 {
+        position: relative;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1500px;
+        background-color: #1652F0;
+    }
+    .namba {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 259px;
+        list-style: none;
+        top: -1097px;
+        left: 20px;
+        z-index: 4;
+        position: relative;
+        font-size: 90px;
+        font-weight: 700;
+        opacity: 30%;
+    }
+    .containerck {
+        margin-top: 1750px;
+    }
+    .ckcont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .garis {
+        border: 1px solid rgb(13, 17, 255);
+        width: 300px;
+        height: 0px;
+        margin-top: auto;
     }
 }
