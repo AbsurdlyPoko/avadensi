@@ -953,7 +953,7 @@ ul {
 
 .lsgcorp .bg-corp {
     position: absolute;
-    width: 3000px !important;
+    width: 3000px;
     max-width: 100%;
     margin: 0 auto;
     top: 0%;
@@ -1280,12 +1280,8 @@ ul {
 
 @media (max-width: 500px){
     .lsgcorp .bg-corp {
-        position: absolute;
-        max-width: 100%;
-        margin: 0px auto;
         top: 62px;
         right: 600px;
-        padding-bottom: 5px;
         width: 546px;
     }
     .lsgfooter{
