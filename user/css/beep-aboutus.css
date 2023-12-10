@@ -226,8 +226,8 @@ header {
     }
 
     .header-text h1 {
-        top: 43% !important;
-        font-size: 40px !important;
+        top: 43%;
+        font-size: 40px;
     }
 }
 
@@ -241,8 +241,8 @@ header {
     }
 
     .header-text h1 {
-        top: 43% !important;
-        font-size: 30px !important;
+        top: 43%;
+        font-size: 30px;
     }
 }
 
@@ -377,6 +377,41 @@ header {
     margin-left: 30px;
     margin-top: 5px;
 }
+.floatingcloud3 {
+    position: absolute;
+    width: 3000px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    padding-bottom: 5px;
+    z-index: 8 !important;
+
+    animation-name: floatingcloud1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.floatingcloud4 {
+    position: absolute;
+    width: 3000px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    padding-bottom: 5px;
+    z-index: 8 !important;
+
+    animation-name: floatingcloud2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
 
 @keyframes floatingcloud1 {
     0% {
@@ -407,6 +442,23 @@ header {
 }
 
 .illusrg {
+    position: absolute;
+    width: 1250px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    padding-bottom: 5px;
+    z-index: 5;
+
+    animation-name: illusrg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.illusrg1 {
     position: absolute;
     width: 1250px !important;
     max-width: 100%;
@@ -577,6 +629,16 @@ header {
     color: #1652f0;
     z-index: 9;
 }
+.ourpartners h1 {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1652f0;
+    z-index: 9;
+}
 
 .partnerour {
     font-weight: 700;
@@ -584,6 +646,17 @@ header {
 }
 
 .ourpartner p {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 9;
+}
+.ourpartners p {
     position: absolute;
     top: 15%;
     left: 7%;
@@ -768,6 +841,16 @@ ul {
     padding-bottom: 5px;
     z-index: 4 !important;
 }
+.apaygdikerjakans img {
+    position: absolute;
+    width: 3000px !important;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    padding-bottom: 5px;
+    z-index: 4 !important;
+}
 
 .apaygdikerjakan h1 {
     position: absolute;
@@ -779,8 +862,29 @@ ul {
     color: #1652f0;
     z-index: 9;
 }
+.apaygdikerjakans h1 {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1652f0;
+    z-index: 9;
+}
 
 .apaygdikerjakan p {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 9;
+}
+.apaygdikerjakans p {
     position: absolute;
     top: 15%;
     left: 7%;
@@ -806,7 +910,7 @@ ul {
     color: #000000;
     font-weight: 700 !important;
     font-size: 18px;
-    width: 300px !important;
+    width: 300px;
     line-height: 1.4;
 }
 
@@ -1286,7 +1390,7 @@ ul {
     }
     .lsgfooter{
         background-color: rgb(22, 82, 240);
-        margin-top: 1390px;
+        margin-top: 910px;
         height: 1200px;
     }
     .logo-avidencorp{
@@ -1533,9 +1637,9 @@ ul {
     .linelsg {
         position: absolute;
         border: 1px solid rgb(255, 255, 255);
-        width: 250px;
+        width: 183px;
         top: 938px;
-        left: 15px;
+        left: 65px;
     }
     .consultus {
         font-family: 'Inter', sans-serif;
@@ -1543,7 +1647,7 @@ ul {
         position: absolute;
         text-transform: uppercase;
         top: 980px;
-        left: 15px;
+        left: 85px;
         font-weight: 800;
         font-size: 12px;
         letter-spacing: 2px;
@@ -1554,9 +1658,342 @@ ul {
         color: #ffffff;
         position: absolute;
         top: 1030px;
-        left: 15px;
+        left: 86px;
         font-weight: 500;
         font-size: 9px;
         letter-spacing: 2px;
+    }
+}
+@media (max-width: 500px) {
+    .siluetav img {
+        position: fixed;
+        right: -6px;
+        width: 335px;
+        top: 0px;
+        opacity: 10%;
+        z-index: 10;
+    }
+    .bg-herotest {
+        max-width: 320px;
+        top: 71px;
+        right: 55px;
+    }
+    .logo-ontop {
+        max-width: 92px;
+        top: 134px;
+        left: 24px;
+    }
+    .header-text h1 {
+        font-size: 16px;
+        font-weight: 800;
+        top: 137px;
+        left: 22px;
+    }
+    .floatingcloud1 {
+        max-width: 337px;
+        top: 69px;
+        right: 16px;
+    }
+    .floatingcloud2 {
+        max-width: 100%;
+        top: 69px;
+        right: 0%;
+    }
+    .floatingrocket {
+        max-width: 384px;
+        top: 48px;
+        right: 21px;
+    }
+    .illusrg {
+        max-width: 337px;
+        top: 62px;
+        right: 28px;
+    }
+    .apaitu h1 {
+        top: -60px;
+        font-size: 30px;
+    }
+    .apaitu p {
+        width: 327px;
+        top: 20px;
+        font-size: 15px;
+    }
+    .illusrg1 {
+        max-width: 705px;
+        top: 219px;
+        right: 20px;
+    }
+    .floatingcloud3 {
+        max-width: 780px;
+        top: 195px;
+        right: 5px;
+    }
+    .floatingcloud4 {
+        max-width: 780px;
+        top: 182px;
+        right: 0%;
+    }
+    .visimisi img {
+        max-width: 450px;
+        top: 200px;
+        right: -8px;
+    }
+    .visimisitext {
+        width: 244px;
+        font-size: 14px;
+        word-spacing: 5px;
+        padding: 2px 0px;
+        left: 132px;
+        margin-bottom: 17px;
+    }
+    .midvismis {
+        margin-top: 225px;
+    }
+    .timternal h1 {
+        top: 102px;
+        left: 7%;
+    }
+    .timternal img {
+        max-width: 472px;
+        top: 191px;
+        right: -52px;
+    }
+    .nametim h3 {
+        font-size: 15px;
+    }
+    .nametim p {
+        font-family: 'Inter', sans-serif;
+        color: black;
+        font-weight: 500;
+    }
+    .bangkal {
+        left: 1px;
+        width: 124px;
+        top: 74px;
+    }
+    .bangwin {
+        left: 134px;
+        top: 91px;
+    }
+    .bangfathi {
+        left: 260px;
+        top: 74px;
+    }
+    .ourpartner h1 {
+        top: 100px;
+        left: 7%;
+    }
+    .ourpartners h1 {
+        top: 375px;
+        left: 7%;
+    }
+    .ourpartner p {
+        top: 165px;
+        left: 7%;
+    }
+    .ourpartners p {
+        top: 434px;
+        left: 7%;
+    }
+    #main {
+        top: 200px;
+        left: 0%;
+    }
+    .keraji {
+        width: 200px;
+        margin-top: 10%;
+    }
+    .wellco {
+        width: 220px;
+        margin: 10% 4% 2% 4%;
+    }
+    .kakilima {
+        width: 220px;
+        margin-top: 10%;
+    }
+    .testimonials-content {
+        top: 505px;
+        left: 3px;
+        width: 369px;
+    }
+    .apaygdikerjakan h1 {
+        position: absolute;
+        top: 354px;
+        left: 7%;
+        margin-bottom: 50px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #1652f0;
+        z-index: 9;
+    }
+    .apaygdikerjakan p {
+        top: 452px;
+        left: 7%;
+    }
+    .apaygdikerjakan img {
+        max-width: 506px;
+        margin: 0 auto;
+        top: 430px;
+        right: -75px;
+        padding-bottom: 5px;
+        z-index: 4 !important;
+    }
+    .ichi {
+        position: absolute;
+        left: -1px;
+        top: 354px;
+    }
+    .kerjaatas {
+        font-family: 'Inter', sans-serif;
+        color: #000000;
+        font-weight: 700 !important;
+        font-size: 15px;
+        width: 121px;
+        line-height: 1.4;
+    }
+    .ni {
+        position: absolute;
+        left: 36.5%;
+        top: 354px;
+    }
+    .san {
+        position: absolute;
+        left: 263px;
+        top: 354px;
+    }
+    .apaygdikerjakans h1 {
+        top: 500px;
+        left: 7%;
+    }
+    .apaygdikerjakans p {
+        top: 600px;
+        left: 7%;
+    }
+    .apaygdikerjakans img {
+        max-width: 572px;
+        top: 601px;
+        right: -164px;
+    }
+    #main3 {
+        top: 653px;
+        left: 0%;
+        text-align: center;
+        z-index: 5;
+    }
+    #main3 .block {
+        width: 220px;
+        height: 21px;
+        font-size: 14px;
+    }
+    #main3 .block2 {
+        font-size: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .logo-ontop {
+        position: absolute;
+        width: 200px;
+        max-width: 92px;
+        margin: 0 auto;
+        top: 130px;
+        left: 15px;
+        padding-bottom: 5px;
+        z-index: 10 !important;
+    }
+    .bg-herotest {
+        position: absolute;
+        width: 1250px !important;
+        max-width: 301px;
+        margin: 0 auto;
+        top: 71px;
+        right: 19px;
+        padding-bottom: 5px;
+        z-index: 4;
+    }
+    .header-text h1 {
+        font-size: 16px;
+        font-weight: 800;
+        top: 137px;
+        left: 14px;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        color: white;
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 7;
+    }
+    .floatingrocket {
+        position: absolute;
+        width: 3000px !important;
+        max-width: 384px;
+        margin: 0 auto;
+        top: 44px;
+        right: -19px;
+        padding-bottom: 5px;
+        z-index: 5;
+        animation-name: floatingrocket;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .floatingcloud1 {
+        position: absolute;
+        width: 3000px !important;
+        max-width: 337px;
+        margin: 0 auto;
+        top: 69px;
+        right: -21px;
+        padding-bottom: 5px;
+        z-index: 8 !important;
+        animation-name: floatingcloud1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .floatingcloud2 {
+        position: absolute;
+        width: 3000px !important;
+        max-width: 337px;
+        margin: 0 auto;
+        top: 74px;
+        right: -19px;
+        padding-bottom: 5px;
+        z-index: 8 !important;
+        animation-name: floatingcloud2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .illusrg {
+        position: absolute;
+        width: 1250px !important;
+        max-width: 337px;
+        margin: 0 auto;
+        top: 62px;
+        right: -18px;
+        padding-bottom: 5px;
+        z-index: 5;
+        animation-name: illusrg;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .apaitu h1 {
+        top: 15%;
+        font-size: 30px;
+    }
+    .apaitu p {
+        width: 331px;
+        top: 35%;
+        font-size: 15px;
     }
 }
